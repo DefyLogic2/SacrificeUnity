@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+//[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    [Header("Movement Settings")]
+    //[Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float moveSpeedMultiplier = 1f;
 
@@ -60,8 +60,9 @@ public class PlayerController : MonoBehaviour
         // Optional: Turbo trigger
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
         {
-            turbo();
+            dash();
         }
+        
     }
 
     void FixedUpdate()
@@ -82,7 +83,6 @@ public class PlayerController : MonoBehaviour
     {
 
     }
-}
+    }
 
 
-}
