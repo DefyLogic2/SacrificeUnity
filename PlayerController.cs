@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove = true;
     public bool canDash = true;
-    public float dash{distance = 5f;
+    public float dash_distance = 5f;
 
     public float acceleration = 10f;
     public float deceleration = 15f;
@@ -83,5 +83,6 @@ public class PlayerController : MonoBehaviour
 
     }
 }
+
 
 }
